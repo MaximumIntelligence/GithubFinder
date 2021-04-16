@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Github finder</string>
+    <string name="find">Find</string>
+    <string name="detailed_user_info">Detailed user info</string>
+    <string name="input_username_here">input username here:</string>
+    <string name="more_user_info">More user info</string>
+</resources>

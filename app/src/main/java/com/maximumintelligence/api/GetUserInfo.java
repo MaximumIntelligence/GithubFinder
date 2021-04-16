@@ -12,7 +12,4 @@ public interface GetUserInfo {
 
     @GET("/users/{user}")
     Call<UserSkeleton> getUser(@Path("user") String user);
-
-    @GET("/users/{user}")
-    Call<List<UserSkeleton>> getUserInfo(@Path("user") String user);
 }

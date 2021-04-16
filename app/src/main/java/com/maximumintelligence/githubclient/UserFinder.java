@@ -1,12 +1,6 @@
 package com.maximumintelligence.githubclient;
 
-
-import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import androidx.constraintlayout.widget.ConstraintLayout;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -31,15 +25,10 @@ public class UserFinder {
                 try {
                     responseTV.setText("Found user: " + response.body().getLogin());
 
-
                 } catch (Exception e) {
-
                     responseTV.setText("user not found");
-
                 }
             }
-
-
 
             @Override
             public void onFailure(Call<UserSkeleton> call, Throwable t) {

@@ -1,8 +1,6 @@
 package com.maximumintelligence.githubclient;
 
 import android.os.Bundle;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -43,8 +41,6 @@ public class UserInfoActivity extends AppCompatActivity {
 
         recyclerView.setAdapter(adapter);
         loadExtendedData();
-
-
     }
 
     public void loadExtendedData() {
@@ -57,22 +53,10 @@ public class UserInfoActivity extends AppCompatActivity {
             public void onResponse(Call<UserSkeleton> call, Response<UserSkeleton>
                     response) {
 
-
-
-
                 receivedUserdata.clear();
-                if(receivedUserdata == null){
-
-                }
                 receivedUserdata.add(response.body());
-
-
-
-                //receivedUserdata.clear();
-                //receivedUserdata.addAll(response.body());
                 adapter.notifyDataSetChanged();
             }
-
 
             @Override
             public void onFailure(Call<UserSkeleton> call, Throwable t) {
